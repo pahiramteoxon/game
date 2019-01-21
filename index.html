@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+  	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.css">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="lib/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui.css"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+
+	<script src="js/script.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class="container wrapper">
+		<div class="row back mx-auto mt-5">	
+			<div class="pad shape1" data-pad="1">
+				<audio preload="auto" class="sound1">
+					<source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg"/>
+					<source src="sounds/ogg/sounds_01.ogg" type="audio/ogg"/>
+				</audio>
+			</div>
+			<div class="pad shape2" data-pad="2">
+				<audio preload="auto" class="sound2">
+					<source src="sounds/mp3/sounds_02.mp3"  type="audio/mpeg"/>
+					<source src="sounds/ogg/sounds_02.ogg" type="audio/ogg"/>
+				</audio>
+			</div>
+			<div class="pad shape3" data-pad="3">
+				<audio preload="auto" class="sound3">
+					<source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg"/>
+					<source src="sounds/ogg/sounds_03.ogg" type="audio/ogg"/>
+				</audio>
+			</div>
+			<div class="pad shape4" data-pad="4">
+				<audio preload="auto" class="sound4">
+					<source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg"/>
+					<source src="sounds/ogg/sounds_04.ogg" type="audio/ogg"/>
+				</audio>
+			</div>
+			<div class="pad shape5" data-pad="5">
+				<audio preload="auto" class="sound5">
+					<source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg"/>
+					<source src="sounds/ogg/sounds_04.ogg" type="audio/ogg"/>
+				</audio>
+			</div>
+
+			<div class="circle"></div>
+		</div>
+
+		<div class="mt-2 mx-auto insdiv">
+		<div class="row m-0 p-0">	
+			<!-- <img src="bg1.jpg"> -->
+			<p class="m-0 title">CARDS SEQUENCER</p>
+			<p class="m-0 pt-3 ins"><b> HOW TO PLAY : </b></p>
+		</div>	
+			<p class="m-0">Click the cards in the same sequence as they light up and tune up. </p>
+			<p class="m-0">You need to be fast, so watch the cards closely!</p>
+			<p class="m-0">This is a great game for strengthening your short-term memory.</p>
+		</div>
+
+
+		<div class="level mt-3">
+			<h2>Level: 1</h2>
+		</div>
+		<div class="score mt-3">
+			<h2>Score: 0</h2>
+		</div>
+		
+		<ul class="difficulty">
+
+			<li>
+				<input type="radio" class="difOpt" name="difficulty" value="2"> Easy
+			</li>
+			<li>
+				<input type="radio" class="difOpt" name="difficulty" value="1" checked> Normal
+			</li>
+			<li>
+				<input type="radio" class="difOpt" name="difficulty" value="0.5"> Hard
+			</li>
+			<li>
+				<input type="radio" class="difOpt" name="difficulty" value="0.25"> Insane
+			</li>
+		</ul>
+		<div class="sButton">
+			<button class="btn btn-success btn-lg start">START</button>
+		</div>
+	</div>
+
+<!--  <a class="btn btn-danger" href="#danger" data-toggle="modal"><h4><i class="glyphicon glyphicon-eye-open"></i> Danger</h4></a>
+
+	<div class="modal fade" id="danger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-header-danger">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h1><i class="glyphicon glyphicon-thumbs-up"></i> Danger Modal</h1>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+<!-- <button class="md-trigger btn btn-success" data-modal="modal-12">Show modal</button> -->
+
+<div class="md-modal md-effect-12">
+    <div class="md-content">
+        <h3 class="text-center gmover">GAME OVER</h3>
+        <div class="sButton">
+        	<h6><p id="levelp"></p></h6>
+        	<h6><p id="scorep"></p></h6>
+			<button class="btn btn-success btn-lg md-close">NEW GAME</button>
+		</div>
+        
+    </div>
+</div>
+
+<div class="md-overlay"></div>
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+</html>
